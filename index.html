@@ -1,1008 +1,648 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="vi">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#2B2B35">
-    <title>Lục Anh Tài</title>
-    <link rel="shortcut icon" href="./img/icon_smile.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Lục Anh Tài | Game Developer</title>
+    <meta name="description"
+        content="Lục Anh Tài, Game Developer tại Hà Nội với hơn 3 năm kinh nghiệm (Monkey Junior, INTER ITS, DigiNext), kiêm phát triển app mobile và Node.js. Kinh nghiệm, dự án và CV.">
+    <meta name="author" content="Lục Anh Tài">
+    <meta name="theme-color" content="#EEF1F4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0F1513" media="(prefers-color-scheme: dark)">
+    <link rel="canonical" href="https://tailucanh.github.io/MyProfile/">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Lục Anh Tài | Game Developer">
+    <meta property="og:description"
+        content="Game Developer hơn 3 năm kinh nghiệm, kiêm app mobile và Node.js. Xem kinh nghiệm, dự án và tải CV.">
+    <meta property="og:url" content="https://tailucanh.github.io/MyProfile/">
+    <meta property="og:image" content="https://tailucanh.github.io/MyProfile/assets/img/og.jpg">
+    <meta property="og:locale" content="vi_VN">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <link rel="stylesheet" href="css/style.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/main.css">
 
+    <!-- Áp theme đã lưu trước khi vẽ trang để không bị nháy màu; bật hiệu ứng mở trang khi có JS -->
+    <script>
+        if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js');
+        try {
+            var t = localStorage.getItem('theme');
+            if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) { }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lục Anh Tài",
+        "jobTitle": "Game Developer",
+        "worksFor": { "@type": "Organization", "name": "DigiNext", "url": "https://diginext.com.vn/" },
+        "url": "https://tailucanh.github.io/MyProfile/",
+        "image": "https://tailucanh.github.io/MyProfile/assets/img/avatar.jpg",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hà Nội", "addressCountry": "VN" },
+        "alumniOf": "FPT Polytechnic",
+        "sameAs": [
+            "https://github.com/tailucanh",
+            "https://www.linkedin.com/in/lucanhtai1504/",
+            "https://www.facebook.com/lucanhtai1504"
+        ]
+    }
+    </script>
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Bỏ qua, tới nội dung chính</a>
 
-    <div class="art-app art-app-onepage">
-        <div class="art-mobile-top-bar"></div>
-        <div class="art-app-wrapper">
-            <div class="art-app-container">
-                <div class="art-info-bar">
-                    <div class="art-info-bar-frame">
-                        <div class="art-info-bar-header">
-                            <div class="art-info-bar-btn">
-                                <i class="fas fa-ellipsis-v"></i>
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top" aria-label="Lục Anh Tài, về đầu trang">
+                <span class="brand-mark" aria-hidden="true">AT</span>
+                <span class="brand-name">Lục Anh Tài</span>
+            </a>
+
+            <nav class="nav" id="siteNav" aria-label="Điều hướng chính">
+                <ul>
+                    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="#kinh-nghiem">Kinh nghiệm</a></li>
+                    <li><a href="#ky-nang">Kỹ năng</a></li>
+                    <li><a href="#du-an">Dự án</a></li>
+                    <li><a href="#hanh-trinh">Hành trình</a></li>
+                    <li><a href="#lien-he">Liên hệ</a></li>
+                </ul>
+                <a class="btn btn-accent nav-cv" href="files/CV-LucAnhTai-GameDeveloper.pdf" download="CV-Lục Anh Tài-Game Developer.pdf">
+                    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Tải CV
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn" id="themeToggle" type="button" aria-label="Đổi giao diện sáng/tối">
+                    <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-controls="siteNav"
+                    aria-expanded="false" aria-label="Mở menu">
+                    <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="top" aria-labelledby="hero-name">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="status"><span class="status-dot" aria-hidden="true"></span>Sẵn sàng cho cơ hội mới</p>
+
+                    <h1 class="hero-name" id="hero-name">Lục Anh Tài</h1>
+                    <p class="hero-role">Game Developer hơn 3 năm kinh nghiệm, kiêm làm app mobile và Node.js backend.</p>
+
+                    <p class="hero-code" aria-hidden="true">
+                        <span class="tag">&lt;code&gt;</span> I build
+                        <span class="rotator" id="rotator"
+                            data-words='["mobile games.", "Android apps.", "REST APIs with Node.js.", "developer tools."]'>mobile
+                            games.</span><span class="caret"></span>
+                        <span class="tag">&lt;/code&gt;</span>
+                    </p>
+
+                    <p class="hero-lead">
+                        Tôi làm game cho điện thoại ở Hà Nội từ năm 2023, qua Monkey Junior, INTER ITS (Kiếm Sơn
+                        Mobile, Hiệp Kiếm Mobile) và hiện tại là DigiNext. Ngoài game, tôi làm app Android/Flutter, viết API Node.js và công cụ mã nguồn mở cho
+                        lập trình viên.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-accent" href="#kinh-nghiem">Xem kinh nghiệm</a>
+                        <a class="btn btn-ghost" href="files/CV-LucAnhTai-GameDeveloper.pdf" download="CV-Lục Anh Tài-Game Developer.pdf">
+                            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Tải CV (PDF)
+                        </a>
+                    </div>
+
+                    <ul class="socials" aria-label="Mạng xã hội">
+                        <li><a href="https://github.com/tailucanh" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank" rel="noopener"
+                                aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.facebook.com/lucanh.tai" target="_blank" rel="noopener"
+                                aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/tai_it_dev/" target="_blank" rel="noopener"
+                                aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@tai_it_1504" target="_blank" rel="noopener"
+                                aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+
+                <figure class="hero-photo">
+                    <img src="assets/img/avatar.webp"
+                        srcset="assets/img/avatar-600.webp 600w, assets/img/avatar.webp 960w"
+                        sizes="(max-width: 860px) 100vw, 44vw" width="960" height="1280"
+                        alt="Lục Anh Tài ngồi trên bờ kè, phía sau là hồ nước và dãy núi phủ sương"
+                        fetchpriority="high">
+                </figure>
+            </div>
+        </section>
+
+        <!-- ===================== GIỚI THIỆU ===================== -->
+        <section class="section section-alt" id="gioi-thieu" aria-labelledby="about-title">
+            <div class="wrap about-grid">
+                <div class="section-head">
+                    <h2 id="about-title">Giới thiệu</h2>
+                </div>
+
+                <div class="about-body">
+                    <p class="about-lead">
+                        Tôi là Game Developer với hơn 3 năm làm việc tại Hà Nội, hiện ở DigiNext. Nền tảng của tôi là
+                        chuyên ngành Lập trình Mobile tại Cao đẳng FPT Polytechnic (điểm trung bình
+                        <strong>8.6/10</strong>), nên ngoài game tôi vẫn làm app và server: một app gọi món chạy trên
+                        điện thoại thật, một trang bán hàng có server riêng, một công cụ giúp lập trình viên đỡ tốn thời
+                        gian.
+                    </p>
+                    <p>
+                        Ngoài giờ học, tôi tham gia các cuộc thi lập trình như FPT Edu Hackathon và F-Talent Code, và tự
+                        học qua Bro Code, freeCodeCamp, W3Schools cùng mã nguồn trên GitHub.
+                    </p>
+
+                    <dl class="facts">
+                        <div>
+                            <dt>Quê quán</dt>
+                            <dd>Thanh Hóa</dd>
+                        </div>
+                        <div>
+                            <dt>Nơi làm việc</dt>
+                            <dd>Hà Nội</dd>
+                        </div>
+                        <div>
+                            <dt>Ngôn ngữ</dt>
+                            <dd>Tiếng Việt, tiếng Anh đọc tài liệu kỹ thuật</dd>
+                        </div>
+                        <div>
+                            <dt>Học vấn</dt>
+                            <dd>Lập trình Mobile, FPT Polytechnic</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== KINH NGHIỆM ===================== -->
+        <!-- Muốn thêm mô tả công việc: đặt <p class="job-desc">...</p> ngay sau <p class="job-role"> của công ty đó -->
+        <section class="section" id="kinh-nghiem" aria-labelledby="exp-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="exp-title">Kinh nghiệm làm việc</h2>
+                    <p>Hơn 3 năm làm Game Developer tại Hà Nội, mới nhất ở trên cùng.</p>
+                </div>
+
+                <ol class="jobs">
+                    <li class="job is-current">
+                        <a class="job-mark" href="https://diginext.com.vn/" target="_blank" rel="noopener" aria-label="Trang web DigiNext"><img src="assets/img/companies/diginext.webp" alt="" width="160" height="160" loading="lazy"></a>
+                        <div class="job-main">
+                            <h3>DigiNext</h3>
+                            <p class="job-role">Game Developer, Hà Nội</p>
+                        </div>
+                        <p class="job-time">
+                            <span class="job-dates"><time datetime="2026-08-07">08/2026</time> – nay</span>
+                            <span class="job-dur" data-start="2026-08">4 tháng</span>
+                        </p>
+                    </li>
+                    <li class="job">
+                        <a class="job-mark job-mark--wide" href="https://interits.com/" target="_blank" rel="noopener" aria-label="Trang web INTER ITS"><img src="assets/img/companies/inter-its.webp" alt="" width="360" height="125" loading="lazy"></a>
+                        <div class="job-main">
+                            <h3>INTER ITS., JSC</h3>
+                            <p class="job-role">Game Developer, Hà Nội</p>
+                            <p class="job-desc">Tham gia phát triển <a class="text-link" href="#du-an">Kiếm Sơn Mobile và
+                                    Hiệp Kiếm Mobile</a>, hai game nhập vai kiếm hiệp trên Android và iOS.</p>
+                        </div>
+                        <p class="job-time">
+                            <span class="job-dates"><time datetime="2025-02-01">02/2025</time> – <time
+                                    datetime="2026-07-01">07/2026</time></span>
+                            <span class="job-dur" data-start="2025-02" data-end="2026-07">1 năm 6 tháng</span>
+                        </p>
+                    </li>
+                    <li class="job">
+                        <a class="job-mark job-mark--fill" href="https://monkey.edu.vn/" target="_blank" rel="noopener" aria-label="Trang web Monkey Junior"><img src="assets/img/companies/monkey-junior.webp" alt="" width="160" height="160" loading="lazy"></a>
+                        <div class="job-main">
+                            <h3>Monkey Junior</h3>
+                            <p class="job-role">Game Developer, Hà Nội</p>
+                        </div>
+                        <p class="job-time">
+                            <span class="job-dates"><time datetime="2023-09-16">09/2023</time> – <time
+                                    datetime="2025-02-01">02/2025</time></span>
+                            <span class="job-dur" data-start="2023-09" data-end="2025-02">1 năm 6 tháng</span>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===================== KỸ NĂNG ===================== -->
+        <section class="section section-alt" id="ky-nang" aria-labelledby="skills-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="skills-title">Kỹ năng</h2>
+                    <p>Bốn mảng tôi đã làm qua công việc và dự án thật, kèm công nghệ dùng trong từng mảng.</p>
+                </div>
+
+                <ul class="skill-list">
+                    <li class="skill-row">
+                        <div class="skill-name">
+                            <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                            <h3>Phát triển game</h3>
+                        </div>
+                        <p>Công việc chính từ năm 2023, qua ba công ty game tại Hà Nội. Dự án cá nhân làm trên Unity
+                            bằng C#: animation, hiệu ứng hạt, vật lý, màn chơi.</p>
+                        <ul class="chips">
+                            <li>Unity</li>
+                            <li>C#</li>
+                        </ul>
+                    </li>
+                    <li class="skill-row">
+                        <div class="skill-name">
+                            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                            <h3>Phát triển ứng dụng di động</h3>
+                        </div>
+                        <p>Làm app Android theo nghiệp vụ thực tế: đăng nhập, quản lý dữ liệu, thống kê, in hóa đơn.
+                            Dùng được cả Flutter và React Native.</p>
+                        <ul class="chips">
+                            <li>Java Android</li>
+                            <li>Flutter</li>
+                            <li>React Native</li>
+                            <li>SQLite</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </li>
+                    <li class="skill-row">
+                        <div class="skill-name">
+                            <i class="fa-solid fa-server" aria-hidden="true"></i>
+                            <h3>Backend và web</h3>
+                        </div>
+                        <p>Viết REST API với Node.js/Express, kết nối MongoDB; làm giao diện web với HTML, CSS,
+                            JavaScript, Bootstrap, jQuery. Gần đây viết thêm TypeScript.</p>
+                        <ul class="chips">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>TypeScript</li>
+                            <li>HTML/CSS/JS</li>
+                        </ul>
+                    </li>
+                    <li class="skill-row">
+                        <div class="skill-name">
+                            <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+                            <h3>Thiết kế giao diện app</h3>
+                        </div>
+                        <p>Thiết kế màn hình trên Figma rồi dựng lại bằng layout XML; chỉnh ảnh cơ bản bằng Photoshop.
+                        </p>
+                        <ul class="chips">
+                            <li>Figma</li>
+                            <li>XML layout</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p class="tools-line"><span>Công cụ hằng ngày:</span> Git, GitHub, Android Studio, VS Code, Figma, tin
+                    học văn phòng.</p>
+            </div>
+        </section>
+
+        <!-- ===================== DỰ ÁN ===================== -->
+        <section class="section" id="du-an" aria-labelledby="projects-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="projects-title">Dự án</h2>
+                    <p>Game đang chạy trên Google Play và App Store, cùng các dự án cá nhân có mã nguồn trên GitHub. Bấm vào ảnh để xem lớn.</p>
+                </div>
+
+                <!-- Game đã phát hành -->
+                <h3 class="sub-head">Game đã tham gia phát triển</h3>
+                <div class="game-grid">
+                    <article class="game">
+                        <a class="game-cover" href="assets/img/games/kiem-son-1.webp" data-gallery="kiem-son"
+                            data-caption="Kiếm Sơn Mobile" aria-label="Xem ảnh Kiếm Sơn Mobile">
+                            <img src="assets/img/games/kiem-son-cover.webp" alt="" loading="lazy" width="720"
+                                height="333">
+                            <span class="media-badge"><i class="fa-regular fa-images" aria-hidden="true"></i> 4
+                                ảnh</span>
+                        </a>
+                        <a href="assets/img/games/kiem-son-2.webp" data-gallery="kiem-son"
+                            data-caption="Kiếm Sơn Mobile: đánh boss" hidden></a>
+                        <a href="assets/img/games/kiem-son-3.webp" data-gallery="kiem-son"
+                            data-caption="Kiếm Sơn Mobile: thi đấu môn phái" hidden></a>
+                        <a href="assets/img/games/kiem-son-4.webp" data-gallery="kiem-son"
+                            data-caption="Kiếm Sơn Mobile: bang hội tranh đoạt lãnh thổ" hidden></a>
+                        <div class="game-body">
+                            <div class="game-title">
+                                <img class="game-icon" src="assets/img/games/kiem-son-icon.webp" alt="" width="160"
+                                    height="160" loading="lazy">
+                                <div>
+                                    <h4>Kiếm Sơn Mobile</h4>
+                                    <p class="kind">MMORPG kiếm hiệp, INTER ITS</p>
+                                </div>
+                            </div>
+                            <p>Game nhập vai trực tuyến chuẩn võ lâm: chọn môn phái, săn boss, thi đấu môn phái và
+                                tranh đoạt lãnh thổ giữa các bang hội.</p>
+                            <div class="store-links">
+                                <a class="store-btn" href="https://play.google.com/store/apps/details?id=vn.interits.KiemSonMobile" target="_blank" rel="noopener"
+                                    aria-label="Kiếm Sơn Mobile trên Google Play"><i class="fa-brands fa-google-play"
+                                        aria-hidden="true"></i> Google Play</a>
+                                <a class="store-btn" href="https://apps.apple.com/vn/app/ki%E1%BA%BFm-s%C6%A1n-mobile/id6737122709" target="_blank" rel="noopener"
+                                    aria-label="Kiếm Sơn Mobile trên App Store"><i class="fa-brands fa-apple"
+                                        aria-hidden="true"></i> App Store</a>
                             </div>
                         </div>
-                        <div class="art-header">
-                            <div class="art-avatar">
-                                <a data-fancybox="avatar" data-no-swup href="img/avatar.png" class="art-avatar-curtain">
-                                    <img src="img/avatar.png" alt="avatar">
-                                    <i class="fas fa-expand"></i>
-                                </a>
-                                <div class="art-lamp-light">
-                                    <div class="art-available-lamp"></div>
+                    </article>
+
+                    <article class="game">
+                        <a class="game-cover" href="assets/img/games/hiep-kiem-1.webp" data-gallery="hiep-kiem"
+                            data-caption="Hiệp Kiếm Mobile" aria-label="Xem ảnh Hiệp Kiếm Mobile">
+                            <img src="assets/img/games/hiep-kiem-cover.webp" alt="" loading="lazy" width="720"
+                                height="405">
+                            <span class="media-badge"><i class="fa-regular fa-images" aria-hidden="true"></i> 3
+                                ảnh</span>
+                        </a>
+                        <a href="assets/img/games/hiep-kiem-2.webp" data-gallery="hiep-kiem"
+                            data-caption="Hiệp Kiếm Mobile: đa dạng hệ phái" hidden></a>
+                        <a href="assets/img/games/hiep-kiem-3.webp" data-gallery="hiep-kiem"
+                            data-caption="Hiệp Kiếm Mobile: trang bị các phái" hidden></a>
+                        <div class="game-body">
+                            <div class="game-title">
+                                <img class="game-icon" src="assets/img/games/hiep-kiem-icon.webp" alt="" width="160"
+                                    height="160" loading="lazy">
+                                <div>
+                                    <h4>Hiệp Kiếm Mobile</h4>
+                                    <p class="kind">Nhập vai kiếm hiệp, INTER ITS</p>
                                 </div>
                             </div>
-                            <h5 class="art-name mb-10">Lục Anh Tài</h5>
-                            <!-- post -->
-                            <div class="art-sm-text">Mobile developer</div>
+                            <p>Game kiếm hiệp với hai con đường Chính và Tà, PK tự do và bang hội tranh bá, phát hành
+                                trên cả Android và iOS.</p>
+                            <div class="store-links">
+                                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.volamcodien" target="_blank" rel="noopener"
+                                    aria-label="Hiệp Kiếm Mobile trên Google Play"><i class="fa-brands fa-google-play"
+                                        aria-hidden="true"></i> Google Play</a>
+                                <a class="store-btn" href="https://apps.apple.com/us/app/hi%E1%BB%87p-ki%E1%BA%BFm-mobile/id1515732505" target="_blank" rel="noopener"
+                                    aria-label="Hiệp Kiếm Mobile trên App Store"><i class="fa-brands fa-apple"
+                                        aria-hidden="true"></i> App Store</a>
+                            </div>
                         </div>
-                        <div id="scrollbar2" class="art-scroll-frame">
-                            <div class="art-table p-15-15">
-                                <ul>
-                                    <li>
-                                        <h6>Quê quán:</h6><span>Thanh Hóa</span>
-                                    </li>
-                                    <li>
-                                        <h6>Công việc:</h6><span>Sinh viên</span>
-                                    </li>
+                    </article>
+                </div>
 
-                                    <li>
-                                        <h6>Tuổi:</h6><span>20</span>
-                                    </li>
-                                </ul>
-                            </div>
+                <h3 class="sub-head">Dự án cá nhân</h3>
 
-                            <div class="art-ls-divider"></div>
+                <!-- Dự án nổi bật -->
+                <article class="feature">
+                    <div class="feature-text">
+                        <p class="kind">Dự án mã nguồn mở, 2026</p>
+                        <h4>offload-mcp-server</h4>
+                        <p>
+                            MCP server cho Claude Code: giao việc đọc nặng (quét nhiều file, lọc log dài, kiểm kê cả
+                            thư mục) cho một agent CLI chạy nền, rồi chỉ đọc lại bản báo cáo ngắn. Nhờ vậy model chính
+                            đọc ít token hơn hẳn.
+                        </p>
+                        <ul class="chips">
+                            <li>TypeScript</li>
+                            <li>Node.js</li>
+                            <li>MCP SDK</li>
+                        </ul>
+                        <p class="feature-meta">Phát hành trên npm và MCP Registry, giấy phép MIT.</p>
+                        <div class="feature-links">
+                            <a class="btn btn-ink" href="https://github.com/tailucanh/offload-mcp-server"
+                                target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Xem trên GitHub</a>
+                            <a class="btn btn-ghost" href="https://www.npmjs.com/package/offload-mcp-server"
+                                target="_blank" rel="noopener"><i class="fa-brands fa-npm" aria-hidden="true"></i> Trang
+                                npm</a>
+                        </div>
+                    </div>
+                    <div class="terminal" aria-label="Ví dụ cài đặt offload-mcp-server">
+                        <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <pre><code><span class="t-dim"># cài đặt và kiểm tra cấu hình</span>
+<span class="t-prompt">$</span> npx -y offload-mcp-server setup
+<span class="t-prompt">$</span> npx -y offload-mcp-server doctor
+<span class="t-ok">✓</span> config   ~/.offload/config.json
+<span class="t-ok">✓</span> worker   agy ready
 
-                            <div class="art-lang-skills p-30-15">
+<span class="t-dim"># trong Claude Code</span>
+offload_submit_task  <span class="t-dim">→</span> job queued
+offload_get_status   <span class="t-dim">→</span> Summary + Findings</code></pre>
+                    </div>
+                </article>
 
-                                <!-- skill -->
-                                <div class="art-lang-skills-item">
-                                    <div id="circleprog1" class="art-cirkle-progress"></div>
-                                    <!-- title -->
-                                    <h6>Làm việc nhóm</h6>
-                                </div>
-                                <!-- skill end -->
-
-                                <!-- skill -->
-                                <div class="art-lang-skills-item">
-                                    <div id="circleprog2" class="art-cirkle-progress"></div>
-                                    <!-- title -->
-                                    <h6>English</h6>
-                                </div>
-                                <!-- skill end -->
-
-                                <!-- skill -->
-                                <div class="art-lang-skills-item">
-                                    <div id="circleprog3" class="art-cirkle-progress"></div>
-                                    <!-- title -->
-                                    <h6>Tự Học</h6>
-                                </div>
-                                <!-- skill end -->
-
-                            </div>
-                            <!-- language  skill -->
-                            <div class="art-ls-divider"></div>
-                            <div class="art-hard-skills p-30-15">
-                                <div class="art-hard-skills-item">
-                                    <div class="art-skill-heading">
-                                        <h6>Java Android, Flutter</h6>
-                                    </div>
-                                    <div class="art-line-progress">
-                                        <div id="lineprog1"></div>
-                                    </div>
-                                </div>
-                                <div class="art-hard-skills-item">
-                                    <div class="art-skill-heading">
-                                        <h6>Node JS (Express JS)</h6>
-                                    </div>
-                                    <div class="art-line-progress">
-                                        <div id="lineprog2"></div>
-                                    </div>
-                                </div>
-
-                                <div class="art-hard-skills-item">
-                                    <div class="art-skill-heading">
-                                        <h6>Html,Css,Js (React Native)</h6>
-                                    </div>
-                                    <div class="art-line-progress">
-                                        <div id="lineprog3"></div>
-                                    </div>
-                                </div>
-                                <div class="art-hard-skills-item">
-                                    <div class="art-skill-heading">
-                                        <h6>Game 2D (Unity,C#)</h6>
-                                    </div>
-                                    <div class="art-line-progress">
-                                        <div id="lineprog4"></div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- language skills end -->
-
-                            <div class="art-ls-divider"></div>
-
-                            <!-- knowledge list -->
-                            <ul class="art-knowledge-list p-15-0">
-                                <li>SQLite, MongoDB, Firebase</li>
-                                <li>Git, GitHub, Figma</li>
-                                <li>Tin học văn phòng</li>
+                <div class="project-grid">
+                    <!-- Poly Oder -->
+                    <article class="project">
+                        <a class="project-media media-phones" href="assets/img/polyoder/2.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: màn hình đăng nhập" aria-label="Xem ảnh Poly Oder">
+                            <img src="assets/img/polyoder/5.webp" alt="" loading="lazy" width="576" height="1280">
+                            <img src="assets/img/polyoder/8.webp" alt="" loading="lazy" width="576" height="1280">
+                            <img src="assets/img/polyoder/26.webp" alt="" loading="lazy" width="576" height="1280">
+                            <span class="media-badge"><i class="fa-regular fa-images" aria-hidden="true"></i> 6
+                                ảnh</span>
+                        </a>
+                        <a href="assets/img/polyoder/5.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: tổng quan bàn và doanh thu trong ngày" hidden></a>
+                        <a href="assets/img/polyoder/8.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: danh sách đơn đang có tại bàn" hidden></a>
+                        <a href="assets/img/polyoder/12.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: sản phẩm bán chạy" hidden></a>
+                        <a href="assets/img/polyoder/24.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: in hóa đơn" hidden></a>
+                        <a href="assets/img/polyoder/26.webp" data-gallery="polyoder"
+                            data-caption="Poly Oder: báo cáo doanh thu theo tháng" hidden></a>
+                        <div class="project-body">
+                            <p class="kind">Ứng dụng Android</p>
+                            <h4>Poly Oder</h4>
+                            <p>App gọi món và quản lý quán: bàn, đơn hàng, thanh toán, in hóa đơn, nhân viên và báo cáo
+                                doanh thu. Dự án cá nhân làm đủ nghiệp vụ từ đầu tới cuối.</p>
+                            <ul class="chips">
+                                <li>Java</li>
+                                <li>Android</li>
                             </ul>
-                            <!-- knowledge list end -->
-
-                            <!-- divider -->
-                            <div class="art-ls-divider"></div>
-                            <!-- links frame -->
-                            <div class="art-links-frame p-15-15">
-                                <!-- download cv button -->
-                                <a href="files/CV-LucAnhTai-InternMobile.pdf" class="art-link" download
-                                    data-no-swup>Download cv <i class="fas fa-download"></i></a>
-
-                            </div>
-                            <!-- links frame end -->
-
+                            <a class="text-link" href="https://github.com/tailucanh/PolyOderApp" target="_blank"
+                                rel="noopener">Mã nguồn trên GitHub</a>
                         </div>
-                        <!-- scroll frame end -->
+                    </article>
 
-                        <!-- sidebar social -->
-                        <div class="art-ls-social">
-                            <!-- social link -->
-                            <a href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank" data-no-swup><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <!-- social link -->
-                            <a href="https://www.facebook.com/lucanh.tai" target="_blank" data-no-swup><i
-                                    class="fab fa-facebook"></i></a>
-                            <!-- social link -->
-                            <a href="https://www.instagram.com/tai_it_dev/" target="_blank" data-no-swup><i
-                                    class="fab fa-instagram"></i></a>
-                            <!-- social link -->
-                            <a href="https://github.com/tailucanh" target="_blank" data-no-swup><i
-                                    class="fab fa-github"></i></a>
-                            <!-- social link -->
-                            <a href="https://www.tiktok.com/@tai_it_1504" target="_blank" data-no-swup><i
-                                    class="fa-brands fa-tiktok"></i></a>
+                    <!-- Smile Store -->
+                    <article class="project">
+                        <a class="project-media" href="assets/img/projects/smile-store.webp" data-gallery="smile"
+                            data-caption="Smile Store: trang chủ cửa hàng" aria-label="Xem ảnh Smile Store">
+                            <img src="assets/img/projects/smile-store.webp" alt="Trang chủ Smile Store" loading="lazy"
+                                width="1340" height="624">
+                        </a>
+                        <div class="project-body">
+                            <p class="kind">Web và server</p>
+                            <h4>Smile Store</h4>
+                            <p>Trang bán quần áo có đăng nhập và đăng ký tài khoản. Server viết bằng
+                                Node.js/Express, dữ liệu lưu trên MongoDB.</p>
+                            <ul class="chips">
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                            </ul>
+                            <a class="text-link" href="https://github.com/tailucanh/Assigment_MOB402_ServerAndroid"
+                                target="_blank" rel="noopener">Mã nguồn trên GitHub</a>
                         </div>
-                        <!-- sidebar social end -->
-
-                    </div>
-                    <!-- menu bar frame end -->
-
-                </div>
-                <!-- info bar end -->
-
-                <!-- content -->
-                <div class="art-content">
-                    <!-- curtain -->
-                    <div class="art-curtain"></div>
-                    <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
-                        <div class="art-top-bg-overlay"></div>
-                    </div>
-                    <!-- swup container -->
-                    <div class="transition-fade" id="swup">
-                        <!-- scroll frame -->
-                        <div id="scrollbar" class="art-scroll-frame">
-
-                            <!-- container -->
-                            <div class="container-fluid">
-
-                                <!-- row -->
-                                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-
-                                        <!-- banner -->
-                                        <div class="art-a art-banner" style="background-image: url(img/bg.jpg)">
-                                            <!-- banner back -->
-                                            <div class="art-banner-back"></div>
-                                            <!-- banner dec -->
-                                            <div class="art-banner-dec"></div>
-                                            <!-- banner overlay -->
-                                            <div class="art-banner-overlay">
-                                                <!-- main title -->
-                                                <div class="art-banner-title">
-                                                    <!-- title -->
-                                                    <h1 class="mb-15">Thật tuyệt! <br>Chào mừng bạn đến với tôi!</h1>
-                                                    <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I build
-                                                        <span class="txt-rotate" data-period="2000"
-                                                            data-rotate='["app interfaces.", "android applications.", "server backend."]'></span>&lt;/<i>code</i>&gt;
-                                                    </div>
-                                                    <div class="art-buttons-frame">
-                                                        <!-- button -->
-                                                        <a href="https://www.facebook.com/lucanh.tai"
-                                                            class="art-btn art-btn-md" target="_blank"
-                                                            data-no-swup><span>Contact
-                                                                now</span></a>
-                                                    </div>
-                                                </div>
-                                                <!-- main title end -->
-                                                <!-- photo -->
-                                                <img src="img/smile.png" class="art-banner-photo" alt="Your Name">
-                                            </div>
-                                            <!-- banner overlay end -->
-                                        </div>
-                                        <!-- banner end -->
-
-                                    </div>
-                                    <!-- col end -->
-                                </div>
-                                <!-- row end -->
-
-                            </div>
-                            <!-- container end -->
-
-
-                            <!-- container -->
-                            <div class="container-fluid">
-                                <!-- row -->
-                                <div class="row">
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-                                        <!-- section title -->
-                                        <div class="art-section-title">
-                                            <!-- title frame -->
-                                            <div class="art-title-frame mt-3">
-                                                <!-- title -->
-                                                <h4>My skills</h4>
-                                            </div>
-                                            <!-- title frame end -->
-                                        </div>
-                                        <!-- section title end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                    <!-- col -->
-                                    <div class="col-lg-4 col-md-6">
-
-                                        <!-- service -->
-                                        <div class="art-a art-service-icon-box">
-                                            <!-- service content -->
-                                            <div class="art-service-ib-content">
-                                                <!-- title -->
-                                                <h5 class="mb-15">App Development</h5>
-                                                <!-- text -->
-                                                <div class="mb-15">Phát triển ứng dụng phù
-                                                    hợp với yêu cầu và
-                                                    nhu cầu người dùng. Có kiến thức cơ bản về Android, React Native,
-                                                    Flutter.
-                                                </div>
-
-                                            </div>
-                                            <!-- service content end -->
-                                        </div>
-                                        <!-- service end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                    <!-- col -->
-                                    <div class="col-lg-4 col-md-6">
-
-                                        <!-- service -->
-                                        <div class="art-a art-service-icon-box">
-                                            <!-- service content -->
-                                            <div class="art-service-ib-content">
-                                                <!-- title -->
-                                                <h5 class="mb-15">UI/UX Design App</h5>
-                                                <!-- text -->
-                                                <div class="mb-15">Có tìm hiểu và tự học về thiết kế giao diện app trên
-                                                    Figma, dựng layout xml, sử dụng được chức năng Photoshop căn bản.
-                                                </div>
-
-                                            </div>
-                                            <!-- service content end -->
-                                        </div>
-                                        <!-- service end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-
-
-                                    <!-- col -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <!-- service -->
-                                        <div class="art-a art-service-icon-box">
-                                            <!-- service content -->
-                                            <div class="art-service-ib-content">
-                                                <!-- title -->
-                                                <h5 class="mb-15">Web Design/Server Web</h5>
-                                                <!-- text -->
-                                                <div class="mb-15">Có kiến thức cơ bản về Web,
-                                                    Jquery, Bootstrap. Sử dụng NodeJs Express để
-                                                    kết nối cơ sở dữ liệu.</div>
-                                                <!-- button -->
-
-                                            </div>
-                                            <!-- service content end -->
-                                        </div>
-                                        <!-- service end -->
-
-                                    </div>
-                                    <!-- col end -->
-                                    <div class="col-lg-4 col-md-6">
-                                        <!-- service -->
-                                        <div class="art-a art-service-icon-box">
-                                            <!-- service content -->
-                                            <div class="art-service-ib-content">
-                                                <!-- title -->
-                                                <h5 class="mb-15">Game Development</h5>
-                                                <!-- text -->
-                                                <div class="mb-15">Tìm hiểu và học về Game 2D/3D trên phần mềm Unity
-                                                    C#, những
-                                                    thuộc tính cơ bản khi xây dựng game.</div>
-                                                <!-- button -->
-
-                                            </div>
-                                            <!-- service content end -->
-                                        </div>
-                                        <!-- service end -->
-
-                                    </div>
-
-                                </div>
-                                <!-- row end -->
-
-                            </div>
-                            <!-- container end -->
-
-
-                            <!-- container -->
-                            <div class="container-fluid">
-                                <!-- row -->
-                                <div class="row">
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-                                        <!-- section title -->
-                                        <div class="art-section-title">
-                                            <!-- title frame -->
-                                            <div class="art-title-frame">
-                                                <!-- title -->
-                                                <h4>Recommendations</h4>
-                                            </div>
-                                            <!-- title frame end -->
-                                        </div>
-                                        <!-- section title end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-
-                                        <!-- slider container -->
-                                        <div class="swiper-container art-testimonial-slider" style="overflow: visible">
-                                            <!-- slider wrapper -->
-                                            <div class="swiper-wrapper">
-                                                <!-- slide -->
-                                                <div class="swiper-slide">
-
-                                                    <!-- testimonial -->
-                                                    <div class="art-a art-testimonial">
-                                                        <!-- testimonial body -->
-                                                        <div class="testimonial-body">
-                                                            <!-- photo -->
-                                                            <img class="art-testimonial-face"
-                                                                src="img/testimonials/brocode.jpg" alt="face">
-                                                            <!-- name -->
-                                                            <h5>Bro Code <i class="fa-solid fa-circle-check"></i></h5>
-                                                            <div class="art-el-suptitle mb-15">@BroCodez - Coding
-                                                                bootcamps hate him!
-                                                            </div>
-                                                            <!-- text -->
-                                                            <div class="mb-15">Một kênh chia sẻ kiến thức lập trình
-                                                                rất hay và khá chi tiết, phù hợp cho những người đang và
-                                                                mới học lâp trình căn bản. Video có phụ đề nhiều nước
-                                                                khác nhau, giải thích rõ ràng dễ hiểu.
-                                                            </div>
-                                                        </div>
-                                                        <!-- testimonial body end -->
-                                                        <!-- testimonial footer -->
-                                                        <div class="art-testimonial-footer">
-                                                            <div class="art-left-side">
-                                                                <!-- star rate -->
-                                                                <ul class="art-star-rate">
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                </ul>
-                                                                <!-- star rate end -->
-                                                            </div>
-                                                            <div class="art-right-side">
-                                                                <div class="art-buttons-frame "><a
-                                                                        href="https://www.youtube.com/@BroCodez"
-                                                                        class="art-link art-color-link art-w-chevron"
-                                                                        target="_blank" data-no-swup>Link</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- testimonial footer end -->
-                                                    </div>
-                                                    <!-- testimonial end -->
-
-                                                </div>
-                                                <!-- slide end -->
-
-                                                <!-- slide -->
-                                                <div class="swiper-slide">
-
-                                                    <!-- testimonial -->
-                                                    <div class="art-a art-testimonial">
-                                                        <!-- testimonial body -->
-                                                        <div class="testimonial-body">
-                                                            <!-- photo -->
-                                                            <img class="art-testimonial-face"
-                                                                src="img/testimonials/freecodecamp.jpg" alt="face">
-                                                            <!-- name -->
-                                                            <h5>FreeCodeCamp <i class="fa-solid fa-circle-check"></i>
-                                                            </h5>
-                                                            <div class="art-el-suptitle mb-15">@freecodecamp -
-                                                                Learn to code for free.
-                                                            </div>
-                                                            <!-- text -->
-                                                            <div class="mb-15">Là một "học viện code trực tuyến" với
-                                                                trang <a href="https://www.youtube.com/@freecodecamp"
-                                                                    target="_blank" class="art-color-link-2"
-                                                                    data-no-swup>blog</a> bao gồm các article,tổng hợp
-                                                                tutorials và tips về mọi thứ trong lập trình. Một kênh
-                                                                <a href="https://www.youtube.com/@freecodecamp"
-                                                                    target="_blank" class="art-color-link-2"
-                                                                    data-no-swup>youtobe</a>
-                                                                đăng tải các video hướng dẫn dưới dạng một khóa học trực
-                                                                tuyến.
-                                                            </div>
-                                                        </div>
-                                                        <!-- testimonial body end -->
-                                                        <!-- testimonial footer -->
-                                                        <div class="art-testimonial-footer">
-                                                            <div class="art-left-side">
-                                                                <!-- star rate -->
-                                                                <ul class="art-star-rate">
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                </ul>
-                                                                <!-- star rate end -->
-                                                            </div>
-                                                            <div class="art-right-side">
-                                                                <div class="art-buttons-frame "><a
-                                                                        href="https://www.youtube.com/@freecodecamp"
-                                                                        class="art-link art-color-link art-w-chevron"
-                                                                        target="_blank" data-no-swup>Link</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- testimonial footer end -->
-                                                    </div>
-                                                    <!-- testimonial end -->
-
-                                                </div>
-                                                <!-- slide end -->
-
-                                                <!-- slide -->
-                                                <div class="swiper-slide">
-
-                                                    <!-- testimonial -->
-                                                    <div class="art-a art-testimonial">
-                                                        <!-- testimonial body -->
-                                                        <div class="testimonial-body">
-                                                            <!-- photo -->
-                                                            <img class="art-testimonial-face"
-                                                                src="img/testimonials/w3schools.jpg" alt="face">
-                                                            <!-- name -->
-                                                            <h5>W3 Schools <i class="fa-solid fa-circle-check"></i></h5>
-                                                            <div class="art-el-suptitle mb-15">Refsnes Data</div>
-                                                            <!-- text -->
-                                                            <div class="mb-15">Là một trang web giáo dục cho việc học
-                                                                các công nghệ web trực tuyến. Ngoài ra trang web cũng
-                                                                cung cấp những kiến thức về nhiều loại ngôn ngữ lập
-                                                                trình cơ bản hiện nay như Data Analytics, Server Side,
-                                                                XML Tutorials</div>
-                                                        </div>
-                                                        <!-- testimonial body end -->
-                                                        <!-- testimonial footer -->
-                                                        <div class="art-testimonial-footer">
-                                                            <div class="art-left-side">
-                                                                <!-- star rate -->
-                                                                <ul class="art-star-rate">
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                </ul>
-                                                                <!-- star rate end -->
-                                                            </div>
-                                                            <div class="art-right-side">
-                                                                <div class="art-buttons-frame "><a
-                                                                        href="https://www.w3schools.com/"
-                                                                        class="art-link art-color-link art-w-chevron"
-                                                                        target="_blank" data-no-swup>Link</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- testimonial footer end -->
-                                                    </div>
-                                                    <!-- testimonial end -->
-
-                                                </div>
-                                                <!-- slide end -->
-
-                                                <!-- slide -->
-                                                <div class="swiper-slide">
-
-                                                    <!-- testimonial -->
-                                                    <div class="art-a art-testimonial">
-                                                        <!-- testimonial body -->
-                                                        <div class="testimonial-body">
-                                                            <!-- photo -->
-                                                            <img class="art-testimonial-face"
-                                                                src="img/testimonials/github.jpg" alt="face">
-                                                            <!-- name -->
-                                                            <h5>Github <i class="fa-solid fa-circle-check"></i></h5>
-                                                            <div class="art-el-suptitle mb-15">Tom Preston-Werner, Chris
-                                                                Wanstrath and PJ Hyett</div>
-                                                            <!-- text -->
-                                                            <div class="mb-15">Là một mạng xã hội dành cho lập trình
-                                                                viên lớn nhất và dễ dùng nhất. Giúp quản lí source code
-                                                                dễ dàng, chia sẻ kiến kiến thức cũng như hỏi đáp thắc
-                                                                mắc. Đây chính là 1 kho tài nguyên tuyệt vời với những
-                                                                lập trình viên.</div>
-                                                        </div>
-                                                        <!-- testimonial body end -->
-                                                        <!-- testimonial footer -->
-                                                        <div class="art-testimonial-footer">
-                                                            <div class="art-left-side">
-                                                                <!-- star rate -->
-                                                                <ul class="art-star-rate">
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                    <li><i class="fas fa-star"></i></li>
-                                                                </ul>
-                                                                <!-- star rate end -->
-                                                            </div>
-                                                            <div class="art-right-side">
-                                                                <div class="art-buttons-frame "><a
-                                                                        href="https://github.com/"
-                                                                        class="art-link art-color-link art-w-chevron"
-                                                                        target="_blank" data-no-swup>Link</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- testimonial footer end -->
-                                                    </div>
-                                                    <!-- testimonial end -->
-
-                                                </div>
-                                                <!-- slide end -->
-
-                                            </div>
-                                            <!-- slider wrapper end -->
-                                        </div>
-                                        <!-- slider container end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-
-                                        <!-- slider navigation -->
-                                        <div class="art-slider-navigation">
-
-                                            <!-- left side -->
-                                            <div class="art-sn-left">
-
-                                                <!-- slider pagination -->
-                                                <div class="swiper-pagination"></div>
-
-                                            </div>
-                                            <!-- left side end -->
-
-                                            <!-- right side -->
-                                            <div class="art-sn-right">
-
-                                                <!-- slider navigation -->
-                                                <div class="art-slider-nav-frame">
-                                                    <!-- prev -->
-                                                    <div class="art-slider-nav art-testi-swiper-prev"><i
-                                                            class="fas fa-chevron-left"></i></div>
-                                                    <!-- next -->
-                                                    <div class="art-slider-nav art-testi-swiper-next"><i
-                                                            class="fas fa-chevron-right"></i></div>
-                                                </div>
-                                                <!-- slider navigation -->
-
-                                            </div>
-                                            <!-- right side end -->
-
-                                        </div>
-                                        <!-- slider navigation end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                </div>
-                                <!-- row end -->
-
-                            </div>
-                            <!-- container end -->
-
-                            <!-- container -->
-                            <div class="container-fluid">
-
-                                <!-- row -->
-                                <div class="row p-30-0">
-
-                                    <!-- col -->
-                                    <div class="col-lg-12">
-
-                                        <!-- section title -->
-                                        <div class="art-section-title">
-                                            <!-- title frame -->
-                                            <div class="art-title-frame">
-                                                <!-- title -->
-                                                <h4>Works</h4>
-                                            </div>
-                                            <!-- title frame end -->
-                                            <!-- right frame -->
-                                            <div class="art-right-frame">
-                                                <!-- filter -->
-                                                <div class="art-filter">
-                                                    <!-- filter link -->
-                                                    <a href="#" data-filter="*" class="art-link art-current">All
-                                                        Categories</a>
-                                                    <!-- <a href="#" data-filter=".webTemplates" class="art-link">Web
-                                                        Templates</a>
-                                                    <a href="#" data-filter=".logos" class="art-link">Logos</a>
-                                                    <a href="#" data-filter=".drawings" class="art-link">Drawings</a>
-                                                    <a href="#" data-filter=".ui" class="art-link">UI Elements</a> -->
-                                                </div>
-                                                <!-- filter end -->
-                                            </div>
-                                            <!-- right frame end -->
-                                        </div>
-                                        <!-- section title end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                    <div class="art-grid art-grid-3-col art-gallery">
-
-                                        <div class="art-grid-item webTemplates">
-                                            <a data-fancybox="gallery" data-no-swup
-                                                href="img/works/original-size/lepswordgame.png"
-                                                class="art-a art-portfolio-item-frame art-horizontal">
-                                                <img src="img/works/thumbnail/lepswordgame.png" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Lep's Word Game</h5>
-                                                <div class="mb-15">Dự án Game 2D với các kĩ năng cơ bản animation, hiệu
-                                                    ứng hạt,...
-                                                </div>
-                                                <a href="https://github.com/tailucanh/MOB305_Game2D_Leps_World_Game.git"
-                                                    class="art-link art-color-link art-w-chevron" target="_blank"
-                                                    data-no-swup>Read
-                                                    more</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="art-grid-item logos">
-                                            <a data-fancybox="gallery" data-no-swup
-                                                href="img/works/original-size/polyoder.jpg"
-                                                class="art-a art-portfolio-item-frame art-vertical">
-                                                <img src="img/works/thumbnail/polyoder.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Poly Oder App</h5>
-                                                <div class="mb-15">Dự án cá nhân khá hoàn chỉnh và đầy đủ chức năng theo
-                                                    nghiệp vụ</div>
-                                                <a href="https://github.com/tailucanh/PolyOderApp.git"
-                                                    class="art-link art-color-link art-w-chevron" target="_blank"
-                                                    data-no-swup>Read
-                                                    more</a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="art-grid-item drawings">
-                                            <a data-fancybox="gallery" data-no-swup
-                                                href="img/works/original-size/smileshop.png"
-                                                class="art-a art-portfolio-item-frame art-square">
-                                                <img src="img/works/thumbnail/smileshop.png" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Smile Store</h5>
-                                                <div class="mb-15">Dự án đơn giản sử dụng NodeJS, MongoDB, Bootstrap,
-                                                    JQuery
-                                                </div>
-                                                <a href="https://github.com/tailucanh/Assigment_MOB402_ServerAndroid.git"
-                                                    class="art-link art-color-link art-w-chevron" target="_blank"
-                                                    data-no-swup>Read
-                                                    more</a>
-                                            </div>
-
-                                        </div>
-
-                                        <!-- <div class="art-grid-item ui">
-                                            <a data-fancybox="gallery" data-no-swup href="img/works/original-size/4.jpg"
-                                                class="art-a art-portfolio-item-frame art-vertical">
-                                                <img src="img/works/thumbnail/4.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Project title</h5>
-                                                <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas,
-                                                    architecto.</div>
-                                                <a href="#" class="art-link art-color-link art-w-chevron">Read more</a>
-                                            </div>
-
-                                        </div> -->
-
-                                        <!-- <div class="art-grid-item webTemplates">
-                                            <a data-fancybox="gallery" data-no-swup href="img/works/original-size/5.jpg"
-                                                class="art-a art-portfolio-item-frame art-square">
-                                                <img src="img/works/thumbnail/5.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Project title</h5>
-                                                <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas,
-                                                    architecto.</div>
-                                                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                                            </div>
-
-                                        </div> -->
-
-                                        <!-- <div class="art-grid-item logos">
-                                            <a data-fancybox="gallery" data-no-swup href="img/works/original-size/6.jpg"
-                                                class="art-a art-portfolio-item-frame art-vertical">
-                                                <img src="img/works/thumbnail/6.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Project title</h5>
-                                                <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas,
-                                                    architecto.</div>
-                                                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                                            </div>
-
-                                        </div>  -->
-
-                                        <!-- <div class="art-grid-item drawings">
-                                            <a data-fancybox="gallery" data-no-swup href="img/works/original-size/7.jpg"
-                                                class="art-a art-portfolio-item-frame art-square">
-                                                <img src="img/works/thumbnail/7.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Project title</h5>
-                                                <div class="mb-15">Sit amet, consectetur adipisicing elit. Quas,
-                                                    architecto.</div>
-                                                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                                            </div>
-
-                                        </div> -->
-
-                                        <!-- <div class="art-grid-item ui">
-                                            <a data-fancybox="gallery" data-no-swup href="img/works/original-size/8.jpg"
-                                                class="art-a art-portfolio-item-frame art-horizontal">
-                                                <img src="img/works/thumbnail/8.jpg" alt="item">
-                                                <span class="art-item-hover"><i class="fas fa-expand"></i></span>
-                                            </a>
-                                            <div class="art-item-description">
-                                                <h5 class="mb-15">Project title</h5>
-                                                <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                                            </div>
-
-                                        </div>  -->
-
-
-                                    </div>
-
-                                </div>
-                                <!-- row end -->
-
-                            </div>
-                            <!-- container end -->
-                            <!-- container -->
-                            <div class="container-fluid">
-                                <!-- row -->
-                                <div class="row">
-                                    <!-- col -->
-                                    <div class="col-lg-6">
-
-                                        <!-- section title -->
-                                        <div class="art-section-title">
-                                            <!-- title frame -->
-                                            <div class="art-title-frame">
-                                                <!-- title -->
-                                                <h4>Education</h4>
-                                            </div>
-                                            <!-- title frame end -->
-                                        </div>
-                                        <!-- section title end -->
-
-                                        <!-- timeline -->
-                                        <div class="art-timeline art-gallery" id="history">
-                                            <div class="art-timeline-item">
-                                                <div class="art-timeline-mark-light"></div>
-                                                <div class="art-timeline-mark"></div>
-
-                                                <div class="art-a art-timeline-content">
-                                                    <div class="art-card-header">
-                                                        <div class="art-left-side">
-                                                            <h5>FPT Polytechnic</h5>
-                                                            <div class="art-el-suptitle mb-15">Nguyễn Chí Thành</div>
-                                                        </div>
-                                                        <div class="art-right-side">
-                                                            <span class="art-date">September 30, 2021 - Studying</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <p> Sinh viên chuyên ngành lập trình Mobile tại Trường cao đẳng FPT
-                                                        Polytechnic. Vượt qua tất
-                                                        cả các môn học với điểm số trung bình hiện tại là 8.6/10</p>
-                                                    <a data-fancybox="diplome" data-no-swup
-                                                        href="files/PointFPTPolytechnic.pdf"
-                                                        class="art-link art-color-link art-w-chevron">Xem thêm</a>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                        <!-- timeline end -->
-
-                                    </div>
-                                    <div class="col-lg-6">
-
-                                        <!-- section title -->
-                                        <div class="art-section-title">
-                                            <!-- title frame -->
-                                            <div class="art-title-frame">
-                                                <!-- title -->
-                                                <h4>Work History</h4>
-                                            </div>
-                                            <!-- title frame end -->
-                                        </div>
-                                        <!-- section title end -->
-
-                                        <!-- timeline -->
-                                        <div class="art-timeline">
-
-
-                                            <div class="art-timeline-item">
-                                                <div class="art-timeline-mark-light"></div>
-                                                <div class="art-timeline-mark"></div>
-
-
-                                                <div class="art-a art-timeline-content">
-                                                    <div class="art-card-header">
-                                                        <div class="art-left-side">
-                                                            <h5>FPT EDU HACKATHON</h5>
-                                                            <div class="art-el-suptitle mb-15">Tổ chức Giáo dục FPT (FE)
-                                                            </div>
-                                                        </div>
-                                                        <div class="art-right-side">
-                                                            <span class="art-date">June 1, 2022 - August 29, 2022</span>
-                                                        </div>
-                                                    </div>
-                                                    <p>Tham gia cuộc thi FPT Edu HACKATHON 2022 với chủ đề “Ứng dụng
-                                                        phân tán trên nền
-                                                        tảng Blockchain” do tổ chức giáo dục Tổ chức Giáo dục FPT – FPT
-                                                        Edu thực hiện.
-
-                                                    </p>
-                                                    <a data-fancybox="recommendation" data-no-swup
-                                                        href="img/hackathon.JPG"
-                                                        class="art-link art-color-link art-w-chevron">Xem thêm</a>
-                                                    <a data-fancybox="recommendation" data-no-swup
-                                                        href="img/hackathon2.JPG"></a>
-                                                </div>
-
-
-
-                                            </div>
-
-                                            <div class="art-timeline-item">
-                                                <div class="art-timeline-mark-light"></div>
-                                                <div class="art-timeline-mark"></div>
-
-                                                <div class="art-a art-timeline-content">
-                                                    <div class="art-card-header">
-                                                        <div class="art-left-side">
-                                                            <h5>F-TALENT CODE</h5>
-                                                            <div class="art-el-suptitle mb-15">Trường Đại học FPT</div>
-                                                        </div>
-                                                        <div class="art-right-side">
-                                                            <span class="art-date">October 8, 2022</span>
-                                                        </div>
-                                                    </div>
-                                                    <p>Tham gia F-TALENT CODE - là cuộc thi tìm kiếm những tài năng đam
-                                                        mê với lập trình,
-                                                        nhằm tìm ra những gương mặt sáng giá đại diện cho Trường Đại học
-                                                        FPT dự thi Olympic tin
-                                                        học sinh viên Quốc gia và đấu trường ACM ICPC Quốc tế 2022.</p>
-                                                    <a data-fancybox="recommendation" data-no-swup
-                                                        href="img/ftalencode.jpg"
-                                                        class="art-link art-color-link art-w-chevron">Xem thêm</a>
-                                                    <a data-fancybox="recommendation" data-no-swup
-                                                        href="img/ftalentcode2.jpg"></a>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <!-- timeline end -->
-
-                                    </div>
-                                    <!-- col end -->
-
-                                </div>
-                                <!-- row end -->
-
-                            </div>
-                            <!-- container end -->
-
-                            <div class="container-fluid">
-                                <footer>
-                                    <div class="art-copy"> Copy right ©2023 Luc Anh Tai</div>
-                                    <!-- author ( Please! Do not delete it. You are awesome! :) -->
-                                    <div>Author:&#160; <a href="https://www.facebook.com/lucanh.tai" target="_blank"
-                                            data-no-swup>Lục Anh Tài</a></div>
-                                </footer>
-                            </div>
+                    </article>
+
+                    <!-- Lep's World -->
+                    <article class="project">
+                        <a class="project-media" href="assets/img/projects/leps-world.webp" data-gallery="leps"
+                            data-caption="Lep's World: màn hình bắt đầu" aria-label="Xem ảnh Lep's World">
+                            <img src="assets/img/projects/leps-world.webp" alt="Màn hình bắt đầu game Lep's World"
+                                loading="lazy" width="1100" height="622">
+                        </a>
+                        <div class="project-body">
+                            <p class="kind">Game 2D</p>
+                            <h4>Lep's World</h4>
+                            <p>Game đi cảnh 2D làm trên Unity, luyện các kỹ năng cơ bản: animation nhân
+                                vật, hiệu ứng hạt, vật lý.</p>
+                            <ul class="chips">
+                                <li>Unity</li>
+                                <li>C#</li>
+                            </ul>
+                            <a class="text-link" href="https://github.com/tailucanh/MOB305_Game2D_Leps_World_Game"
+                                target="_blank" rel="noopener">Mã nguồn trên GitHub</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="art-preloader">
-            <div class="art-preloader-content">
-                <h4>Loading...</h4>
-                <div id="preloader" class="art-preloader-load"></div>
+        </section>
+
+        <!-- ===================== HÀNH TRÌNH ===================== -->
+        <section class="section section-alt" id="hanh-trinh" aria-labelledby="journey-title">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2 id="journey-title">Hành trình</h2>
+                    <p>Học tập, cuộc thi và dự án cá nhân, mới nhất ở trên cùng.</p>
+                </div>
+
+                <ol class="timeline">
+                    <li class="tl-item">
+                        <time class="tl-date" datetime="2026-11">11/2026</time>
+                        <div class="tl-body">
+                            <h3>Phát hành offload-mcp-server</h3>
+                            <p class="tl-org">Dự án mã nguồn mở cá nhân</p>
+                            <p>Công cụ MCP cho Claude Code, đã có trên npm và MCP Registry, mã nguồn công khai trên
+                                GitHub theo giấy phép MIT.</p>
+                            <a class="text-link" href="https://github.com/tailucanh/offload-mcp-server" target="_blank"
+                                rel="noopener">Xem mã nguồn</a>
+                        </div>
+                    </li>
+                    <li class="tl-item">
+                        <time class="tl-date" datetime="2022-10-08">10/2022</time>
+                        <div class="tl-body">
+                            <h3>F-Talent Code</h3>
+                            <p class="tl-org">Trường Đại học FPT</p>
+                            <p>Cuộc thi tìm tài năng lập trình để chọn đại diện của Trường Đại học FPT dự Olympic Tin
+                                học Sinh viên Việt Nam và ACM ICPC 2022.</p>
+                            <div class="tl-photos">
+                                <a href="assets/img/activities/ftalent-1.webp" data-gallery="ftalent"
+                                    data-caption="F-Talent Code 2022">
+                                    <img src="assets/img/activities/ftalent-1.webp" alt="Ảnh tại F-Talent Code 2022"
+                                        loading="lazy" width="1400" height="933">
+                                </a>
+                                <a href="assets/img/activities/ftalent-2.webp" data-gallery="ftalent"
+                                    data-caption="F-Talent Code 2022">
+                                    <img src="assets/img/activities/ftalent-2.webp" alt="Ảnh tại F-Talent Code 2022"
+                                        loading="lazy" width="1280" height="854">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl-item">
+                        <time class="tl-date" datetime="2022-06">06–08/2022</time>
+                        <div class="tl-body">
+                            <h3>FPT Edu Hackathon 2022</h3>
+                            <p class="tl-org">Tổ chức Giáo dục FPT</p>
+                            <p>Cuộc thi với chủ đề “Ứng dụng phân tán trên nền tảng Blockchain”, kéo dài ba tháng.</p>
+                            <div class="tl-photos">
+                                <a href="assets/img/activities/hackathon-1.webp" data-gallery="hackathon"
+                                    data-caption="FPT Edu Hackathon 2022">
+                                    <img src="assets/img/activities/hackathon-1.webp"
+                                        alt="Ảnh tại FPT Edu Hackathon 2022" loading="lazy" width="838" height="559">
+                                </a>
+                                <a href="assets/img/activities/hackathon-2.webp" data-gallery="hackathon"
+                                    data-caption="FPT Edu Hackathon 2022">
+                                    <img src="assets/img/activities/hackathon-2.webp"
+                                        alt="Ảnh tại FPT Edu Hackathon 2022" loading="lazy" width="838" height="559">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl-item">
+                        <!-- Cập nhật mốc tốt nghiệp nếu đã có -->
+                        <time class="tl-date" datetime="2021-09-30">09/2021</time>
+                        <div class="tl-body">
+                            <h3>Cao đẳng FPT Polytechnic</h3>
+                            <p class="tl-org">Chuyên ngành Lập trình Mobile, cơ sở Nguyễn Chí Thanh</p>
+                            <p>Hoàn thành các môn với điểm trung bình 8.6/10.</p>
+                            <a class="text-link" href="files/PointFPTPolytechnic.pdf" target="_blank" rel="noopener">Xem
+                                bảng điểm (PDF)</a>
+                        </div>
+                    </li>
+                </ol>
             </div>
+        </section>
+
+        <!-- ===================== LIÊN HỆ ===================== -->
+        <section class="contact" id="lien-he" aria-labelledby="contact-title">
+            <div class="wrap contact-inner">
+                <h2 id="contact-title">Cùng làm sản phẩm tiếp theo nhé?</h2>
+                <p>Tôi đang tìm vị trí Game Developer. Cách nhanh nhất để liên lạc là nhắn qua LinkedIn hoặc Facebook.
+                </p>
+                <div class="contact-actions">
+                    <a class="btn btn-light" href="https://www.linkedin.com/in/lucanhtai1504/" target="_blank"
+                        rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> Nhắn qua LinkedIn</a>
+                    <a class="btn btn-outline-light" href="https://www.facebook.com/lucanh.tai" target="_blank"
+                        rel="noopener"><i class="fa-brands fa-facebook-messenger" aria-hidden="true"></i> Nhắn qua
+                        Facebook</a>
+                    <a class="btn btn-outline-light" href="files/CV-LucAnhTai-GameDeveloper.pdf" download="CV-Lục Anh Tài-Game Developer.pdf"><i
+                            class="fa-solid fa-arrow-down" aria-hidden="true"></i> Tải CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span id="year">2026</span> Lục Anh Tài</p>
+            <a href="https://github.com/tailucanh/MyProfile" target="_blank" rel="noopener">Mã nguồn trang này</a>
         </div>
+    </footer>
 
-    </div>
-    <div id="swupMenu"></div>
-    <script src="js/plugins/jquery.min.js"></script>
-    <script src="js/plugins/anime.min.js"></script>
-    <script src="js/plugins/swiper.min.js"></script>
-    <script src="js/plugins/progressbar.min.js"></script>
-    <script src="js/plugins/smooth-scrollbar.min.js"></script>
-    <script src="js/plugins/overscroll.min.js"></script>
-    <script src="js/plugins/typing.min.js"></script>
-    <script src="js/plugins/isotope.min.js"></script>
-    <script src="js/plugins/fancybox.min.js"></script>
-    <script src="js/plugins/swup.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Lightbox xem ảnh -->
+    <dialog class="lightbox" id="lightbox" aria-label="Xem ảnh">
+        <figure>
+            <img id="lbImg" alt="">
+            <figcaption><span id="lbCaption"></span> <span class="lb-count" id="lbCount"></span></figcaption>
+        </figure>
+        <button class="lb-btn lb-close" type="button" data-lb="close" aria-label="Đóng"><i class="fa-solid fa-xmark"
+                aria-hidden="true"></i></button>
+        <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Ảnh trước"><i
+                class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Ảnh sau"><i
+                class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+    </dialog>
 
+    <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
